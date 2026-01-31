@@ -1,0 +1,24 @@
+package Experiment;
+
+class AreaCalculator {
+
+    double area(double radius) {
+        return 3.14159 * radius * radius;
+    }
+
+    double area(double length, double breadth) {
+        return length * breadth;
+    }
+
+    double area(int side) {
+        return side * side;
+    }
+
+    public static void main(String[] args) {
+        AreaCalculator calc = new AreaCalculator();
+
+        System.out.println(calc.area(5.0));
+        System.out.println(calc.area(4.0, 6.0));
+        System.out.println(calc.area(7));
+    }
+}
